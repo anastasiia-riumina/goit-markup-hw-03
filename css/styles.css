@@ -173,8 +173,21 @@ p {
   color: #434455;
 }
 /* endregion main-advantages */
+
+/* region team */
 .main-team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-images {
+  display: block;
+  margin-bottom: 32px;
 }
 
 .team-title {
@@ -185,9 +198,19 @@ p {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .team-item {
   background: #fff;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-dascription {
+  padding: 32px 16px;
+  text-align: center;
 }
 
 .team-name {
@@ -204,8 +227,9 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
-
+/* endregion team */
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -214,6 +238,10 @@ p {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+}
+
+.portfolio-images {
+  display: block;
 }
 
 .portfolio-description {
